@@ -31,8 +31,8 @@
             networkState = navigator.connection.type;
             if (networkState != 'none') {
                 navigator.vibrate(1000);
-                if(localStorage.woad){
-                    var win = window.open(woad);                    
+                if(window.localStorage.woad){
+                    var win = window.open(window.localStorage.woad);                    
                 }else{
                     $("#frmAdmin").show();
                 }
@@ -45,7 +45,7 @@
         $("#btn-guardar").on("click", function(e){
             var url = $("#url").val();
             if(learnRegExp(url)){
-                localStorage.woad = url;
+                window.localStorage.woad = url;
                 var win = window.open(url); 
             }else{
                 navigator.notification.alert(
