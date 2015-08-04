@@ -5,7 +5,6 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <meta name="viewport" content="width=device-width, user-scalable=no">
-        <link rel="stylesheet" type="text/css" href="css/index.min.css" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <link rel="stylesheet" href="css/main.css">
         <title>WOAD</title>        
@@ -19,7 +18,7 @@
                 <button id="btn-guardar" class="btn">Guardar</button>
             </div>
         </div>
-        <!--<script src="cordova.js"></script>!-->
+        <script src="cordova.js"></script>
         <script src="js/jquery-1.11.2.min.js"></script>
         <script src="js/typewriter.js"></script>
         <script>
@@ -45,9 +44,9 @@
         }
         $("#btn-guardar").on("click", function(e){
             var url = $("#url").val();
-            if(learnRegExp(val)){
-                localStorage.woad = val;
-                var win = window.open(val); 
+            if(learnRegExp(url)){
+                localStorage.woad = url;
+                var win = window.open(url); 
             }else{
                 navigator.notification.alert(
                     'Formato Incorrecto!',  
