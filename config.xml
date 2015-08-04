@@ -20,10 +20,8 @@
     <preference name="stay-in-webview"          value="true" />
     <preference name="ios-statusbarstyle"       value="black-opaque" />        
     
-    <gap:plugin name="org.apache.cordova.inappbrowser" version="0.5.2" />
+    <gap:plugin name="org.apache.cordova.inappbrowser"/>
     <gap:plugin name="org.apache.cordova.dialogs" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.vibration" /> 
-    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
-    <gap:plugin name='org.crosswalk.engine' version='1.3.0' source='pgb' />
 </widget>
